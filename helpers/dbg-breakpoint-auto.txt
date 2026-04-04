@@ -1,0 +1,88 @@
+// --------------------
+// Unpacking APIs
+
+// NtProtectVirtualMemory
+// This can be very noisy during normal operation. Uncomment when needed.
+//bp NtProtectVirtualMemory
+
+// NtProtectVirtualMemory
+bp NtUnmapViewOfSection
+
+// ZwMapViewOfSection
+// This can be very noisy during normal operation. Uncomment when needed.
+//bp NtMapViewOfSection
+
+// NtCreateSection
+bp NtCreateSection
+
+// NtCreateThreadEx
+bp NtCreateThreadEx
+
+// NtCreateThread
+//bp NtCreateThread
+
+// --------------------
+//Higher level APIs from Kernel32
+
+// LPVOID VirtualAllocEx
+bp VirtualAllocEx
+
+// LPVOID VirtualAlloc
+bp VirtualAlloc
+
+// BOOL VirtualProtect
+bp VirtualProtect
+
+// BOOL VirtualProtectEx
+bp VirtualProtectEx
+
+// --------------------
+// Injection APIs
+
+// BOOL CreateProcessW
+bp CreateProcessW
+
+//BOOL CreateProcessA
+bp CreateProcessA
+
+// UINT WinExec
+bp WinExec
+
+// HANDLE CreateToolhelp32Snapshot
+bp CreateToolhelp32Snapshot
+
+// BOOL Process32First
+bp Process32First
+
+// BOOL Process32Next
+bp Process32Next
+
+// HANDLE OpenProcess
+bp OpenProcess
+
+// BOOL WriteProcessMemory
+bp WriteProcessMemory
+
+// BOOL ReadProcessMemory
+bp ReadProcessMemory
+
+// HANDLE CreateRemoteThread
+bp CreateRemoteThread
+
+// HANDLE CreateThread
+bp CreateThread
+
+// BOOL SetThreadContext
+bp SetThreadContext
+
+// DWORD ResumeThread
+bp ResumeThread
+
+// Often there are other payloads that can be written to disk in between stages
+// HANDLE CreateFileW
+bp CreateFileW
+
+// BOOL WriteFile
+bp WriteFile
+
+msg "breakpoints set"
