@@ -4,6 +4,11 @@ A mix of assorted scripts and programs.
 
 Some of the more interesting ones are:
 
+## CVE
+| Name | Note |
+| :---- | :---- |
+| CVE-2026-6735 | XSS within PHP-SRC |
+
 ## bash
 | Name | Note |
 | :---- | :---- |
