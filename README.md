@@ -2,38 +2,12 @@
 
 A mix of assorted scripts and programs.
 
-Some of the more interesting ones are:
-
-## CVE
-| Name | Note |
-| :---- | :---- |
-| CVE-2026-6735 | XSS within PHP-SRC |
-
-## bash
-| Name | Note |
-| :---- | :---- |
-| badls.sh | Hides last file when using ls -la or -al |
-| badls-loader.sh | Creates persistent badls |
-| diff-again.sh | Diffing with variations |
-
-## ctf | binary
-| Name | Note |
-| :---- | :---- |
-| Assorted | Mix of exploits for binary ctfs |
-
-## Python
-| Name | Note |
-| :---- | :---- |
-| CL0-automated.py | Automating CL0 request smuggling |
-
-## x86
-| Name | Note |
-| :---- | :---- |
-| fibonacci.s | fibonacci sequence generator |
-
-## C++
-| Name | Note |
-| :---- | :---- |
-| fuzzer-pugixml.cpp | Several fuzzers for pugixml |
-| wesnoth-dll.cpp | DLL gold hack |
-| wesnoth-external.cpp | External gold hack |
+## Interesting Scripts
+| Type | Name | Note |
+| :---- | :---- | :---- |
+| x86_64 | web-server.s | Basic web server written in assembly |
+| CVE | CVE-2026-6735 | XSS within PHP-SRC |
+| Bash | badls.sh | Hides last file when using ls -la or -al |
+| Bash | badls-loader.sh | Creates persistent badls malware |
+| C++ | fuzzer-pugixml.cpp | Several fuzzers for pugixml |
+| Python | CL0-automated.py | Automating CL0 request smuggling |
